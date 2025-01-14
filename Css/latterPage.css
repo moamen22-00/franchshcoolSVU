@@ -1,0 +1,261 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(../photo/pattern.png);
+    background-size: cover;
+    font-family: lantx;
+}
+
+.nav {
+    width:100%;
+    height: 50px;
+    background-color: rgba(255, 203, 46, 0.953);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav img{
+    width: 200px;
+    height: 200px;
+    margin-top:-60px ;
+}
+
+.nav .list{
+    list-style: none;
+    align-self:center ;
+}
+
+.nav .list li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav .list li a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    padding: 2px;
+    transition: 1s;
+}
+.nav .list li a:hover{
+    color: #625b53;
+    border-bottom: 2px solid #625b53;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 700px) and (min-width: 0) {
+    .nav {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .nav .list {
+        display: flex; 
+        flex-direction: column;
+        margin: 10px 0; 
+        padding: 0; 
+    }
+    .nav .list li {
+        padding: 10px 0; 
+        text-align: center; 
+    }
+    .nav img {
+        width: 150px; 
+        height: auto; 
+        margin-top: 10px; 
+    }
+}
+
+.title{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(234, 228, 220, 0.858);
+    border: dashed 1px rgba(255, 203, 46, 0.953);
+    border-radius:20ox ;
+}
+
+.title h1{
+    color: rgba(34, 34, 34, 0.953);
+    font-family: Blackadder ITC;
+}
+
+.title h2{
+    color: rgba(37, 37, 37, 0.953);
+    margin-top: -35px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(7, 200px); 
+    gap: 20px; 
+    justify-content: center; 
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 203, 46, 0.953);
+    text-align: center;
+    border: 2px dashed rgba(234, 228, 220, 0.858);
+    margin: 20px; 
+  }
+  
+  .card .tit {
+    font-family: lantx;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  
+  .card .tit span {
+    font-family: Blackadder ITC;
+    font-size: 24px;
+  }
+  
+  .card img {
+    width: 110px;
+    margin-bottom: 0;
+    border-radius: 25px;
+    transition:.5s;
+  }
+
+  .card .letter{
+    font-family: Harlow Solid Italic;
+    font-size: 20px;
+    margin-top:-2px ;
+  }
+
+  .card:hover img{
+    width: 125px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(7, 200px); 
+        gap: 15px;
+    }
+
+    .card {
+        width: 180px; 
+        height: 180px; 
+    }
+
+    .card .tit {
+        font-size: 18px; 
+    }
+
+    .card .tit span {
+        font-size: 20px; 
+    }
+
+    .card img {
+        width: 90px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .card {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .card .tit {
+        font-size: 20px; 
+    }
+
+    .card .tit span {
+        font-size: 22px; 
+    }
+
+    .card img {
+        width: 120px; 
+    }
+}
+
+.vid{
+    width: 500px;
+    background-color: rgba(255, 203, 46, 0.953);
+    margin-left: 30%;
+    margin-top:50px;
+    padding: 20px;
+    border: 2px dashed rgba(214, 186, 149, 0.858);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.vid video{
+    width: 500px;
+    margin-top: 30px;
+}
+
+.vid p{
+    font-family: lantx;
+    font-size: 30px;
+    margin: -10px;
+}
+
+.note{
+    font-family: lantx;
+    width: 350px;
+    height: 40px;
+    background: rgba(234, 228, 220, 0.858);
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .vid {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-top: 30px; 
+        padding: 15px;
+    }
+
+    .vid video {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .vid p {
+        font-size: 24px; 
+        margin: -5px;
+    }
+
+    .note {
+        width: 90%;
+        margin-top: 30px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vid {
+        width: 95%; 
+        margin-left: 2.5%;
+        padding: 10px; 
+    }
+
+    .vid video {
+        width: 100%; 
+    }
+
+    .vid p {
+        font-size: 20px; 
+    }
+
+    .note {
+        width: 95%;
+        margin-top: 20px;
+    }
+}

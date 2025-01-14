@@ -1,0 +1,177 @@
+body {
+    box-sizing: border-box;
+    font-family: lantx;
+    margin: 0;
+    padding: 0;
+    background-image: url(../photo/pattern.png);
+    background-size: cover;
+}
+
+.nav {
+    width:100%;
+    height: 50px;
+    background-color: rgba(255, 203, 46, 0.953);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav img{
+    width: 200px;
+    height: 200px;
+    margin-top:-60px ;
+}
+
+.nav .list{
+    list-style: none;
+    align-self:center ;
+}
+
+.nav .list li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav .list li a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    padding: 2px;
+    transition: 1s;
+}
+.nav .list li a:hover{
+    color: #625b53;
+    border-bottom: 2px solid #625b53;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 700px) and (min-width: 0) {
+    .nav {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .nav .list {
+        display: flex; 
+        flex-direction: column;
+        margin: 10px 0; 
+        padding: 0; 
+    }
+    .nav .list li {
+        padding: 10px 0; 
+        text-align: center; 
+    }
+    .nav img {
+        width: 150px; 
+        height: auto; 
+        margin-top: 10px; 
+    }
+}
+
+.tit{
+    width: 300px;
+    height: 150px;
+    background: rgba(234, 228, 220, 0.858);
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.tit .tit-fr{
+    color: rgba(34, 34, 34, 0.953);
+    font-family: Blackadder ITC;
+}
+
+.tit h2{
+    color: rgba(34, 34, 34, 0.953);
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 203, 46, 0.953);
+    margin: 20px;
+    border: 2px dashed rgba(234, 228, 220, 0.858);
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center; 
+    margin: auto; 
+    width: 90%; 
+}
+
+.card {
+    background-color: rgba(255, 203, 46, 0.953);
+    border: 2px dashed rgba(214, 186, 149, 0.858);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+}
+
+.card p {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.card audio {
+    width: 150px;
+    height: 50px;
+    margin-top: -10px;
+}
+
+.card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.note{
+    font-family: lantx;
+    width: 350px;
+    height: 40px;
+    background: rgba(234, 228, 220, 0.858);
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .card {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .card .tit {
+        font-size: 20px; 
+    }
+
+    .card .tit span {
+        font-size: 22px; 
+    }
+
+    .card img {
+        width: 120px; 
+    }
+    .card audio {
+        margin-top: -30px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) { .note {
+    width: 95%;
+    margin-top: 20px;
+}
+}

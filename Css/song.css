@@ -1,0 +1,147 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(../photo/pattern.png);
+    background-size: cover;
+    font-family: lantx;
+}
+
+.nav {
+    width:100%;
+    height: 50px;
+    background-color: rgba(255, 203, 46, 0.953);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav img{
+    width: 200px;
+    height: 200px;
+    margin-top:-60px ;
+}
+
+.nav .list{
+    list-style: none;
+    align-self:center ;
+}
+
+.nav .list li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav .list li a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    padding: 2px;
+    transition: 1s;
+}
+.nav .list li a:hover{
+    color: #625b53;
+    border-bottom: 2px solid #625b53;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 700px) and (min-width: 0) {
+    .nav {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .nav .list {
+        display: flex; 
+        flex-direction: column;
+        margin: 10px 0; 
+        padding: 0; 
+    }
+    .nav .list li {
+        padding: 10px 0; 
+        text-align: center; 
+    }
+    .nav img {
+        width: 150px; 
+        height: auto; 
+        margin-top: 10px; 
+    }
+}
+
+.Firs{
+    width: 500px;
+    height: 400px;
+    background: rgba(255, 203, 46, 0.953);
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.Firs video{
+    width: 400px;
+    border-radius: 25px 50px;
+    border: 2px dashed rgba(196, 175, 113, 0.953);
+}
+
+.Firs p{
+    font-size: 25px;
+}
+.note{
+    font-family: lantx;
+    width: 350px;
+    height: 40px;
+    background: rgba(234, 228, 220, 0.858);
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.end{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 25px;
+    border-radius: 25px;
+    position:absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .Firs {
+        width: 90%; 
+        height: auto; 
+        margin: 20px auto; 
+        padding: 10px; 
+    }
+
+    .Firs video {
+        width: 100%; 
+        border-radius: 20px; 
+    }
+
+    .Firs p {
+        font-size: 20px; 
+    }
+
+    .note {
+        width: 90%; 
+        margin-top: 50px; 
+    }
+
+    .end {
+        position: static; 
+        display: block; 
+        text-align: center;
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Firs {
+        width: 95%; 
+        padding: 5px; 
+    }
+}
+
